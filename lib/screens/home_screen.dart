@@ -60,6 +60,8 @@ class _HomeScreenState extends State<HomeScreen> {
                         padding: const EdgeInsets.symmetric(horizontal: 2.0),
                         child: TextField(
                             controller: controller,
+                            obscureText: true,
+                            obscuringCharacter: '*',
                             decoration: InputDecoration(
                                 enabledBorder: OutlineInputBorder(
                                     borderSide: const BorderSide(
