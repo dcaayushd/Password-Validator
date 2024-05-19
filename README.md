@@ -1,5 +1,3 @@
-Sure, here's a README file for the Flutter app, including the demo GIFs:
-
 # Password Validation App
 
 This is a Flutter app that allows users to validate their passwords based on various criteria, such as minimum length, number of uppercase characters, numeric characters, special characters, and normal characters.
