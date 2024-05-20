@@ -13,6 +13,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   final TextEditingController controller = TextEditingController();
   bool success = false;
+  bool _obscureText = true; // New state variable
 
   @override
   Widget build(BuildContext context) {
@@ -59,32 +60,48 @@ class _HomeScreenState extends State<HomeScreen> {
                       Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 2.0),
                         child: TextField(
-                            controller: controller,
-                            obscureText: true,
-                            obscuringCharacter: '*',
-                            decoration: InputDecoration(
-                                enabledBorder: OutlineInputBorder(
-                                    borderSide: const BorderSide(
-                                        color:
-                                            Color.fromARGB(255, 207, 207, 207),
-                                        width: 2),
-                                    borderRadius: BorderRadius.circular(5)),
-                                floatingLabelStyle: GoogleFonts.mPlus1(
-                                  color: Colors.black,
-                                  fontSize: 18,
-                                ),
-                                focusedBorder: OutlineInputBorder(
-                                  borderSide: BorderSide(
-                                      color:
-                                          success ? Colors.green : Colors.red,
-                                      width: 2),
-                                  borderRadius: BorderRadius.circular(15),
-                                ),
-                                hintText: "Password",
-                                hintStyle:
-                                    GoogleFonts.mPlus1(color: Colors.black),
-                                border: const OutlineInputBorder(
-                                    borderSide: BorderSide()))),
+                          controller: controller,
+                          obscureText: _obscureText, // Use the state variable
+                          obscuringCharacter: '*',
+                          decoration: InputDecoration(
+                            enabledBorder: OutlineInputBorder(
+                              borderSide: const BorderSide(
+                                color: Color.fromARGB(255, 207, 207, 207),
+                                width: 2,
+                              ),
+                              borderRadius: BorderRadius.circular(5),
+                            ),
+                            floatingLabelStyle: GoogleFonts.mPlus1(
+                              color: Colors.black,
+                              fontSize: 18,
+                            ),
+                            focusedBorder: OutlineInputBorder(
+                              borderSide: BorderSide(
+                                color: success ? Colors.green : Colors.red,
+                                width: 2,
+                              ),
+                              borderRadius: BorderRadius.circular(15),
+                            ),
+                            hintText: "Password",
+                            hintStyle: GoogleFonts.mPlus1(color: Colors.black),
+                            border: const OutlineInputBorder(
+                              borderSide: BorderSide(),
+                            ),
+                            suffixIcon: IconButton(
+                              icon: Icon(
+                                _obscureText
+                                    ? Icons.visibility_off 
+                                    : Icons.visibility,
+                                color: Colors.grey,
+                              ),
+                              onPressed: () {
+                                setState(() {
+                                  _obscureText = !_obscureText;
+                                });
+                              },
+                            ),
+                          ),
+                        ),
                       ),
                       const SizedBox(
                         height: 12,
