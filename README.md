@@ -13,15 +13,7 @@ This is a Flutter app that allows users to validate their passwords based on var
 
 The app includes two demo GIFs to showcase its functionality:
 
-### Demo 1
-
-![Demo 1](screenshots/demo1.gif)
-
-This demo shows the app interface when the password does not meet the validation criteria. The app displays a red AppBar and a "failure" animation to indicate an invalid password.
-
-### Demo 2
-
-![Demo 2](screenshots/demo2.gif)
+![Demo](screenshots/demo.gif)
 
 This demo shows the app interface when the password meets the validation criteria. The app displays a green AppBar and a "success" animation to indicate a valid password.
 

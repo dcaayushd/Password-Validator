@@ -13,7 +13,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   final TextEditingController controller = TextEditingController();
   bool success = false;
-  bool _obscureText = true; // New state variable
+  bool _obscureText = true; 
 
   @override
   Widget build(BuildContext context) {
@@ -61,7 +61,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         padding: const EdgeInsets.symmetric(horizontal: 2.0),
                         child: TextField(
                           controller: controller,
-                          obscureText: _obscureText, // Use the state variable
+                          obscureText: _obscureText, 
                           obscuringCharacter: '*',
                           decoration: InputDecoration(
                             enabledBorder: OutlineInputBorder(
