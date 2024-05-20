@@ -44,12 +44,8 @@ class _HomeScreenState extends State<HomeScreen> {
                     width: double.infinity,
                     height: 200,
                     child: success
-                        ? Lottie.network(
-                            "https://lottie.host/b72d482a-8285-41a6-aed9-19ff59a21d4f/2un8X2czPh.json",
-                          )
-                        : Lottie.asset(
-                            "assets/animation_lnt9yuim.json",
-                          ),
+                        ? Lottie.network("https://lottie.host/b72d482a-8285-41a6-aed9-19ff59a21d4f/2un8X2czPh.json",)
+                        : Lottie.asset("assets/animation_lnt9yuim.json",),
                   ),
                 ),
                 SizedBox(
