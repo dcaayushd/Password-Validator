@@ -1,6 +1,6 @@
 # Password Validation App
 
-This is a Flutter app that allows users to validate their passwords based on various criteria, such as minimum length, number of uppercase characters, numeric characters, special characters, and normal characters.
+This is a Flutter app that validates a user's password based on certain criteria, such as minimum length, required number of uppercase characters, digits, and special characters. The app also includes a feature to reveal/hide the password text by tapping an eye icon.
 
 ## Features
 
@@ -11,11 +11,11 @@ This is a Flutter app that allows users to validate their passwords based on var
 
 ## Demo
 
-The app includes two demo GIFs to showcase its functionality:
+The app includes a demo GIF to showcase its functionality:
 
 ![Demo](screenshots/demo.gif)
 
-This demo shows the app interface when the password meets the validation criteria. The app displays a green AppBar and a "success" animation to indicate a valid password.
+This demo shows the app interface when the password meets the validation criteria. The app displays a green AppBar and a "success" animation to indicate a valid password. You can also see, the user can tap the eye icon in the password field to reveal or hide the password text.
 
 ## Installation
 
